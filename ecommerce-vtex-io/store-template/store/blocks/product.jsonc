@@ -1,0 +1,112 @@
+// store/blocks/product.jsonc
+{
+  "store.product": {
+    "blocks": [
+      "responsive-layout.desktop#product-page",
+      "responsive-layout.phone#product-page"
+    ]
+  },
+  
+  "responsive-layout.desktop#product-page": {
+    "children": ["flex-layout.row#product"]
+  },
+
+  "flex-layout.row#product": {
+    "children": ["flex-layout.col#product-main", "leadpedrovicente"],
+    "props": {
+      "blockClass": "product",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#product-main": {
+    "children": ["breadcrumb", "product-images#product", "flex-layout.row#product-main"],
+    "props": {
+      "blockClass": "product-main",
+      "paddingLeft": 10,
+      "paddingRight": 10
+    }
+  },
+
+  "breadcrumb": {
+    "props": {
+      "blockClass": "product"
+    }
+  },
+
+  "product-images#product": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      "thumbnailsOrientation": "horizontal",
+      "blockClass": "product"
+    }
+  },
+
+  "flex-layout.row#product-main": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#buy-info"
+    ]
+  },
+
+  "flex-layout.col#buy-info": {
+    "children": [
+      "flex-layout.row#buy-info",      
+      "add-to-cart-button#product-page"
+    ],
+    "props": {
+      "blockClass": "buy-info"
+    }
+  },
+
+  "flex-layout.row#buy-info": {
+    "children": [
+      "vtex.store-components:product-name#product-page",
+      "product-selling-price#product-page"
+    ],
+    "props": {
+      "blockClass": "buy-info"
+    }
+  },
+
+  "vtex.store-components:product-name#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  },
+
+  "product-identifier.product#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  },
+  
+  "product-selling-price#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  },  
+
+  "product-price-savings#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  },
+
+  "shipping-simulator#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  },  
+
+  "add-to-cart-button#product-page": {
+    "props": {
+      "blockClass": "product-page"
+    }
+  }
+  
+}

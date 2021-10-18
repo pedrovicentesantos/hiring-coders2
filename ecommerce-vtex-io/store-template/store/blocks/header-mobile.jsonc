@@ -1,0 +1,57 @@
+{
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"],
+    "props": {
+      "blockClass": "header-mobile"
+    }
+  },
+
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.col#logo-mobile",
+      "search-bar",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "drawer": {
+    "children": []
+  },
+
+  "flex-layout.row#button-group-mobile": {
+    "children": [
+      "locale-switcher",
+      "login"
+      
+    ],
+    "props": {
+      "blockClass": "button-group-mobile"
+    }
+  },
+
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#mobile"]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "80"
+    }
+  }
+}

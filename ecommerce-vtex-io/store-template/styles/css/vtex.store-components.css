@@ -1,0 +1,90 @@
+.searchBarContainer {
+  width: 50vw;
+}
+
+.searchBarIcon, .searchIcon {
+  color: white;
+}
+
+:global(.vtex-input__suffix) {
+  background: none;
+}
+
+:global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+:global(.vtex-button):hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.imageElement--home-slider {
+  height: 100%;
+  width: 100%;
+}
+
+.discountContainer {
+  width: 100%;
+}
+
+.swiperCaret--product,
+.productImagesGallerySwiperContainer--product .swiper-pagination,
+.productImagesGallerySwiperContainer--product .swiperBullet--active {
+  color: #59ff00;
+}
+
+.productImageTag--product--main {
+  height: 50vh !important;
+  width: auto;
+  object-fit: cover;
+}
+
+.productImagesGallerySwiperContainer--product .swiper-pagination {
+  position: unset;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.swiperCaretNext--product, .swiperCaretPrev--product {
+  top: 95%;
+}
+
+.productImagesContainer--product {
+  width: 50%;
+}
+
+.swiperBullet {
+  align-self: center;
+}
+
+.productImagesContainer--product--carousel,
+.imageElement--contact {
+ background: #424242; 
+}
+
+.carouselGaleryThumbs--product {
+  display: none;
+}
+
+.swiper-pagination {
+  top: 50%;
+}
+
+.productImagesContainer--product--carousel {
+  width: 30rem;
+}
+
+.productBrand--product-page, .productBrand--product-page-mobile {
+  color: white;
+  text-transform: uppercase;
+}
+
+.productNameContainer--product-page-mobile {
+  margin-bottom: 1rem;
+}
+
+.imageElement--home-mobile-slider {
+  height: 100%;
+  border-radius: 20px;
+}

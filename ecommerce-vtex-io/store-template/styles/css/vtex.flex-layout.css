@@ -1,0 +1,73 @@
+.flexRowContent--header-desktop,
+.flexRowContent--footer,
+.flexRowContent--header-mobile {
+  background-color: #212121;
+  justify-content: space-between;
+}
+
+.flexRowContent--button-group-desktop {
+  width: 20vw;
+  justify-content: space-between;
+}
+
+.flexRowContent--home, .flexRowContent--product {
+  background-color: #303030;
+}
+
+.flexRowContent--product {
+  height: 100vh;
+}
+
+.flexRowContent--home-price {
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.flexColChild--product-main {
+  height: auto !important;
+}
+
+.flexRowContent--product-main .stretchChildrenWidth {
+  align-self: start;
+}
+
+.flexRow--product-main {
+  width: 100%;
+}
+
+.flexRow--buy-info  {
+  margin-bottom: 2rem;
+}
+
+.flexRowContent--buy-info {
+  justify-content: center;
+}
+
+.flexColChild--buy-info :global(.vtex-button),
+.flexColChild--buy-info-mobile :global(.vtex-button) {
+  background: #59ff00;
+  color: #3C3C3C;
+  border: none;
+}
+
+.flexColChild--buy-info :global(.vtex-button):hover {
+  background-color: rgb(62, 178, 0);
+}
+
+.flexRowContent--header-mobile {
+  height: 10vh;
+  align-items: center;
+}
+
+.flexRowContent--price-home-mobile {
+  gap: 2rem;
+}
+
+.flexRow--product-mobile {
+  background-color: #303030;
+  height: 100vh;
+}
+
+.flexCol--product-main-mobile {
+  margin-top: 3rem;
+}

@@ -1,0 +1,78 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+
+  "flex-layout.row#desktop": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "header-desktop" // To be able to change header background color
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "flex-layout.row#button-group-desktop"
+    ]
+  },
+
+  "search-bar": {
+    "props": {
+      "placeholder": "BUSCAR",
+      "emptyPlaceholder": "BUSCAR",
+      "compactMode": true,
+      "inputType": "search"
+    }
+  },
+
+  "flex-layout.row#button-group-desktop": {
+    "children": [
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "button-group-desktop"
+    }
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "150"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.cartIcon, .closeIconButton  {
+  color: white;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  color: #3C3C3C;
+}
+
+.minicartCheckoutButton :global(.vtex-button):hover {
+  background: rgb(62,178,0);
+  border-color: rgb(62,178,0);
+}

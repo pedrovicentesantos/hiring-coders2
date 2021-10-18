@@ -1,0 +1,12 @@
+.globeIcon, .buttonText {
+  color: white;
+}
+
+.button {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}

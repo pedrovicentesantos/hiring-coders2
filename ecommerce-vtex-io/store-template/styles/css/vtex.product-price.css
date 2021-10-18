@@ -1,0 +1,22 @@
+.sellingPrice--home,
+.sellingPrice--home-mobile, 
+.sellingPrice--product-page,
+.sellingPrice--product-page-mobile {
+  color: #59ff00;
+  text-align: center;
+}
+
+.sellingPriceValue--home, .sellingPriceValue--product-page {
+  font-size: 1.5rem; 
+}
+
+.sellingPrice--home-mobile {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.sellingPrice--product-page-mobile {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}

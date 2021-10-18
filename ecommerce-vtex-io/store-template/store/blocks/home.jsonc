@@ -1,0 +1,459 @@
+{
+  "store.home": { 
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.phone"
+    ]
+  },
+
+  "responsive-layout.desktop": {
+    "children": ["flex-layout.row#home"]
+  },
+
+  "flex-layout.row#home": { 
+    "props": {
+      "fullWidth": true,
+      "blockClass": "home"
+    },
+    "children":["tab-layout#home"]
+  },
+
+  "tab-layout#home": {
+    "children": [
+      "tab-list#home", "slider-layout#home","tab-content#home"
+    ],
+    "props":{
+      "defaultActiveTabId": "kits",
+      "blockClass": "home"
+    }
+  },
+
+  "tab-list#home": {
+    "children": [
+      "tab-list.item#home1",
+      "tab-list.item#home2",
+      "tab-list.item#home3",
+      "tab-list.item#home4",
+      "tab-list.item#home5",
+      "tab-list.item#home6",
+      "tab-list.item#home7",
+      "tab-list.item#home8"
+    ],
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "kits",
+      "label": "Kits",
+      "defaultActiveTab": true
+    }
+  },
+
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "Palmeiras"
+    }
+  },
+
+  "tab-list.item#home3": {
+    "props": {
+      "tabId": "corinthians",
+      "label": "Corinthians"
+    }
+  },
+
+  "tab-list.item#home4": {
+    "props": {
+      "tabId": "signos",
+      "label": "Signos"
+    }
+  },
+
+  "tab-list.item#home5": {
+    "props": {
+      "tabId": "combos",
+      "label": "Combos"
+    }
+  },
+
+  "tab-list.item#home6": {
+    "props": {
+      "tabId": "oculos",
+      "label": "Óculos"
+    }
+  },
+
+  "tab-list.item#home7": {
+    "props": {
+      "tabId": "medalhas",
+      "label": "Medalhas"
+    }
+  },
+
+  "tab-list.item#home8": {
+    "props": {
+      "tabId": "corrida",
+      "label": "Corrida"
+    }
+  },
+
+  "tab-content#home": {
+    "children": [
+      "tab-content.item#home1",
+      "tab-content.item#home2",
+      "tab-content.item#home3",
+      "tab-content.item#home4",
+      "tab-content.item#home5",
+      "tab-content.item#home6",
+      "tab-content.item#home7",
+      "tab-content.item#home8"
+    ],
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "tab-content.item#home1": {
+    "children": [
+      "search-result-layout.customQuery#1"
+    ],
+    "props": {
+      "tabId": "kits"
+    }
+  },
+  
+  "search-result-layout.customQuery#1": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "kit upmedal",
+        "mapField": "category-1",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+  
+  "tab-content.item#home2": {
+    "children": [
+      "search-result-layout.customQuery#2"
+    ],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+
+  "search-result-layout.customQuery#2": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "palmeiras",
+        "mapField": "ft",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+
+  "tab-content.item#home3": {
+    "children": [
+      "search-result-layout.customQuery#3"
+    ],
+    "props": {
+      "tabId": "corinthians"
+    }
+  },
+
+  "search-result-layout.customQuery#3": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "corinthians",
+        "mapField": "ft",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+
+  "tab-content.item#home4": {
+    "children": [
+      "search-result-layout.customQuery#4"
+    ],
+    "props": {
+      "tabId": "signos"
+    }
+  },
+
+  "search-result-layout.customQuery#4": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "signos",
+        "mapField": "category-2",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+
+  "tab-content.item#home5": {
+    "children": [
+      "search-result-layout.customQuery#5"
+    ],
+    "props": {
+      "tabId": "combos"
+    }
+  },
+
+  "search-result-layout.customQuery#5": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "combos",
+        "mapField": "ft",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+
+  "tab-content.item#home6": {
+    "children": [
+      "search-result-layout.customQuery#6"
+    ],
+    "props": {
+      "tabId": "oculos"
+    }
+  },
+
+  "search-result-layout.customQuery#6": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "oculos",
+        "mapField": "ft",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+
+  "tab-content.item#home7": {
+    "children": [
+      "search-result-layout.customQuery#7"
+    ],
+    "props": {
+      "tabId": "medalhas"
+    }
+  },
+
+  "search-result-layout.customQuery#7": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "medalhas",
+        "mapField": "category-2",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+
+  "tab-content.item#home8": {
+    "children": [
+      "search-result-layout.customQuery#8"
+    ],
+    "props": {
+      "tabId": "corrida"
+    }
+  },
+
+  "search-result-layout.customQuery#8": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "ALL_AVAILABLE",
+        "simulationBehavior": "skip",
+        "queryField": "corrida",
+        "mapField": "category-2",
+        "maxItemsPerPage": 8
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home"
+    ]
+  },
+
+  "search-result-layout.desktop#home":{
+    "children": [      
+      "flex-layout.col#home-search",
+      "search-fetch-more#home"
+    ],
+    "props": {
+      "defaultGalleryLayout": "many",
+      "blockClass": "home"
+    }
+  },
+
+  "search-fetch-more#home": {
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "flex-layout.col#home-search": { 
+    "children": [
+      "search-content#home"
+    ],
+    "props": {
+      "blockClass": "home-search"
+    }
+  },
+
+  "search-content#home": { 
+    "blocks": ["gallery#home", "not-found"],
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "gallery#home": {
+    "props": {
+      "layouts": [
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 2,
+            "mobile": 1
+          }
+        }
+      ],
+      "ManyByLineSummary": "product-summary.shelf#home",
+      "blockClass": "home"
+    }
+  },
+
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-name#home",
+      "product-summary-image#home",
+      "flex-layout.row#home-price"   
+    ],
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "flex-layout.row#home-price": {
+    "children":[
+      "product-selling-price#home",
+      "link.product#product-page"
+    ],
+    "props": {
+      "blockClass": "home-price",
+      "marginTop": 5
+    }
+  },
+
+  "product-selling-price#home": {
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "product-summary-image#home": {
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "product-summary-name#home": {
+    "props": {
+      "blockClass": "home"
+    }
+  },
+
+  "link.product#product-page": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Ver detalhes",
+      "displayMode": "button",
+      "blockClass": "home"
+    }
+  },
+
+  "slider-layout#home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel-home"
+    },
+    "children": ["link.product#slider1", "link.product#slider2"]
+  },
+
+  "link.product#slider1": {
+    "props": {
+      "href": "/woodtrophie/p",
+
+      "blockClass": "slider-home-link"
+    },
+    "children": [
+      "image#slider-home1"
+    ]
+  },
+
+  "image#slider-home1": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf",
+      "blockClass": "home-slider"
+    }
+  },
+
+  "link.product#slider2": {
+    "props": {
+      "href": "/arqueiro/p",
+      "blockClass": "slider-home-link"
+    },
+    "children": [
+      "image#slider-home2"
+    ]
+  },
+
+  "image#slider-home2": {
+    "props": {
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e",
+      "blockClass": "home-slider"
+    }
+  }
+}

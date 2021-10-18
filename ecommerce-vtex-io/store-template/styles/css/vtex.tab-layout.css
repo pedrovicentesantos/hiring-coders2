@@ -1,0 +1,30 @@
+.listContainer--home {
+  background: #212121;
+  margin-bottom: 1rem;
+}
+
+.contentContainer--home {
+  margin-bottom: 10px;
+}
+
+.listContainer--home :global(.vtex-button),
+.listItem--tab-list-item-mobile :global(.vtex-button) {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.listContainer--home :global(.vtex-button):focus,
+.listContainer--home :global(.vtex-button):active,
+.listItemActive--tab-list-item-mobile :global(.vtex-button):active,
+.listItemActive--tab-list-item-mobile :global(.vtex-button):focus {
+  border-bottom: 2px solid #59ff00;
+  background: none;
+  color: #59ff00;
+}
+
+.contentContainer--home-mobile-content {
+  background: #303030;
+  padding: 4rem 0 1rem;
+}
+

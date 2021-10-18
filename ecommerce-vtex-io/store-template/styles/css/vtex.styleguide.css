@@ -1,0 +1,12 @@
+.input {
+  background: none;
+  color: white !important;
+}
+
+::placeholder, :global(.vtex__icon-search), .dropdown :global(.vtex-dropdown__arrow) {
+  color: white;
+}
+
+.dropdown :global(.vtex-dropdown__container) {
+  border-color: #59ff00;
+}

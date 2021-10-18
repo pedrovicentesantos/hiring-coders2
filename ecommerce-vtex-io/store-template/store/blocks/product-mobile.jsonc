@@ -1,0 +1,98 @@
+// store/blocks/product.jsonc
+{
+  "responsive-layout.phone#product-page": {
+    "children": ["flex-layout.row#product-mobile"]
+  },
+
+  "flex-layout.row#product-mobile": {
+    "children": ["flex-layout.col#product-main-mobile"],
+    "props": {
+      "blockClass": "product-mobile",
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#product-main-mobile": {
+    "children": ["product-images#product-mobile", "flex-layout.row#product-main-mobile", "leadpedrovicente"],
+    "props": {
+      "blockClass": "product-main-mobile"
+    }
+  },
+
+  "product-images#product-mobile": {
+    "props": {
+      "displayThumbnailsArrows": true,
+      "thumbnailsOrientation": "horizontal",
+      "blockClass": "product-mobile",
+      "showNavigationArrows": false,
+      "showPaginationDots": false
+    }
+  },
+
+  "flex-layout.row#product-main-mobile": {
+    "props": {
+      "marginTop": 6,
+      "blockClass": "product-main-mobile"
+    },
+    "children": [
+      "flex-layout.col#buy-info-mobile"
+    ]
+  },
+
+  "flex-layout.col#buy-info-mobile": {
+    "children": [
+      "flex-layout.row#buy-info-mobile",      
+      "add-to-cart-button#product-page-mobile"
+    ],
+    "props": {
+      "blockClass": "buy-info-mobile"
+    }
+  },
+
+  "flex-layout.row#buy-info-mobile": {
+    "children": [
+      "vtex.store-components:product-name#product-page-mobile",
+      "product-selling-price#product-page-mobile"
+    ],
+    "props": {
+      "blockClass": "buy-info-mobile"
+    }
+  },
+
+  "vtex.store-components:product-name#product-page-mobile": {
+    "props": {
+      "blockClass": "product-page-mobile"
+    }
+  },
+
+  "product-identifier.product#product-page-mobile": {
+    "props": {
+      "blockClass": "product-page-mobile"
+    }
+  },
+  
+  "product-selling-price#product-page-mobile": {
+    "props": {
+      "blockClass": "product-page-mobile"
+    }
+  },  
+
+  "product-price-savings#product-page-mobile": {
+    "props": {
+      "blockClass": "product-page-mobile"
+    }
+  },
+
+  "shipping-simulator#product-page-mobile": {
+    "props": {
+      "blockClass": "product-page-mobile"
+    }
+  },  
+
+  "add-to-cart-button#product-page-mobile": {
+    "props": {
+      "blockClass": "product-page-mobile"
+    }
+  } 
+}

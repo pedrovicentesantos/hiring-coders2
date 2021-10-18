@@ -1,0 +1,8 @@
+.productBrandName, .deleteIcon, .unitPrice {
+  color: white;
+}
+
+.price {
+ color: #59ff00; 
+ font-size: 1.5rem;
+}

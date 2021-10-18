@@ -1,0 +1,39 @@
+.gallery--many, .gallery--many-mobile {
+  gap: 1rem;
+  justify-content: center;
+}
+
+.galleryItem--many,
+.galleryItem--many-mobile {
+  background: #424242;
+  border-radius: 4px;
+  flex-basis: auto !important;
+  width: 20rem;
+  margin: 0;
+  padding: 0;
+}
+
+.searchResultContainer--home {
+  width: 50%;
+}
+
+.buttonShowMore--home :global(.vtex-button),
+.buttonShowMore--home-mobile :global(.vtex-button)  {
+  background: #59ff00;
+  border-radius: 4px;
+  border: 0;
+  color: #3C3C3C;
+}
+
+.buttonShowMore--home :global(.vtex-button) {
+  margin-top: 4rem;
+}
+
+.buttonShowMore--home-mobile :global(.vtex-button) {
+  margin-top: 2rem;
+}
+
+.buttonShowMore--home :global(.vtex-button):hover {
+  background: rgb(62, 178, 0);
+}
+

@@ -1,0 +1,63 @@
+.sliderLayoutContainer--carousel-home {
+  width: 45% !important;
+  height: 20rem;
+  border-radius: 20px;
+  margin: 0 auto 4rem;
+}
+
+/* So the image inside slider can have width equal slider width */
+.slide--carousel-home, .sliderTrack--carousel-home, .sliderTrackContainer--carousel-home, .slideChildrenContainer--carousel-home {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Put the arrows of slider below slider */
+.sliderArrows--carousel-home, .paginationDotsContainer--carousel-home {
+  bottom: -17%;
+  padding: 0.5rem;
+}
+
+.sliderArrows--carousel-home {
+  color: white;
+  border-radius: 4px;
+}
+
+.sliderArrows--carousel-home:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.paginationDot--carousel-home--isActive,
+.paginationDot--carousel-home-mobile--isActive {
+  background-color: #59ff00;
+}
+
+.sliderLayoutContainer--home-mobile-tab-list {
+  background: #212121;
+}
+
+.slide--carousel-home-mobile {
+  justify-content: center;
+}
+
+.slideChildrenContainer--carousel-home-mobile {
+  width: 90%;
+}
+
+.sliderLayoutContainer--carousel-home-mobile {
+  background: #303030;
+}
+
+.paginationDotsContainer--carousel-home-mobile {
+  top: 110%;
+}
+
+.sliderRightArrow--carousel-home-mobile,
+.sliderLeftArrow--carousel-home-mobile {
+  top: 100%;
+  color: #59ff00;
+}
+
+.slider-home-mobile-link {
+  height: 100%;
+}

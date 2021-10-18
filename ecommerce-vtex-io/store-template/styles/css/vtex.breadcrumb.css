@@ -1,0 +1,7 @@
+.link--product, .term--product {
+  color: white;
+}
+
+.link--product:hover, .link--product:active, .link--product:focus {
+  color: #59ff00;
+}
