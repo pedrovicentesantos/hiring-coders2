@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+  <title>Black Friday Sale</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="./assets/bg-mobile.jpg" as="image">
+  <link rel="preload" href="./assets/bg.jpg" as="image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <lottie-player class="loader" src="./assets/loader.json" background="transparent" speed="1" loop autoplay></lottie-player>
+  <img class="bg bg-desktop hidden" src="./assets/bg.jpg" alt="Background">
+  <img class="bg bg-mobile hidden" src="./assets/bg-mobile.jpg" alt="Background">
+  <div class="banner-container hidden">
+    <img class="image" src="./assets/banner.png" alt="Black Friday Image">
+    <img class="blur" src="./assets/blur.png" alt="Blur">
+  </div>
+  <div class="countdown hidden">
+    <h3>Starts in</h3>
+    <div class="timer-container">
+      <div class="timer">
+        <p class="timer-number" id="days"></p>
+        <p class="label">DAYS</p>
+      </div>
+      <div class="timer">
+        <p class="timer-number" id="hours"></p>
+        <p class="label">HOURS</p>
+      </div>
+      <div class="timer">
+        <p class="timer-number" id="minutes"></p>
+        <p class="label">MINUTES</p>
+      </div>
+      <div class="timer">
+        <p class="timer-number" id="seconds"></p>
+        <p class="label">SECONDS</p>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-header hidden">
+    <p>BLACK FRIDAY</p>
+  </div>
+  <div class="container hidden">
+    <div class="info">
+      <h1 class="title">Sign up to get early access</h1>
+      <h2 class="subtitle">READY. SET. SAVE!</h2>
+      <h3 class="discount">50% OFF</h3>
+    </div>
+    <form action="">
+      <input type="text" placeholder="Enter your name..." required />
+      <input type="email" placeholder="Enter your email..." required />
+      <button type="submit">I'M IN!</button>
+    </form>
+    <h3 class="success-message">
+      Check your email to redeem your discount!
+    </h3>
+  </div>
+  <script src="js/countdown.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/loader.js"></script>
+</body>
+</html>
