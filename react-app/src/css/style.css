@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.float-image {
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 2em 2em;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.section--one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section--one .block--one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.section--one .block--one img {
+  width: fit-content;
+}
+
+.section--two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section--two .block--two {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.section--two .block--two .block-text {
+  width: 60%;
+  text-align: right;
+}
+.section--two .block--two p:last-of-type {
+  margin-top: 1em;
+}
+.section--two footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .section {
+    background-position: center;
+  }
+
+  .section--one .block--one h1 {
+    text-align: center;
+  }
+
+  .section--two {
+    justify-content: flex-start;
+    padding: 0 0.5em;
+  }
+  .section--two .block--two {
+    margin-top: 1em;
+    flex-direction: column;
+  }
+  .section--two .block--two img {
+    height: 40vh;
+  }
+  .section--two .block--two .block-text {
+    margin: 1em 0;
+    width: 100%;
+    text-align: center;
+  }
+  .section--two .block--two p:last-of-type {
+    display: none;
+  }
+  .section--two footer {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 0.9rem;
+    align-self: flex-end;
+  }
+  .section--two footer p {
+    margin-top: auto;
+  }
+  .section--two footer img {
+    display: none;
+  }
+
+  .float-image {
+    margin: 0 0 1em 1em;
+  }
+  .float-image img {
+    width: 5.5em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

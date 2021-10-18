@@ -1,0 +1,51 @@
+.section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.section--one {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .block--one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    & img {
+      width: fit-content;
+    }
+  }
+}
+
+.section--two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  & .block--two {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    & .block-text {
+      width: 60%;
+      text-align: right;
+    }
+
+    & p:last-of-type {
+      margin-top: 1em;
+    }
+  }
+  
+  & footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}

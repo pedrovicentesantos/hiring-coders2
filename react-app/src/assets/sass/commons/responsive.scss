@@ -1,0 +1,63 @@
+@media only screen and (max-width: 600px) {
+  .section {
+    background-position: center;
+  }
+
+  .section--one {  
+  
+    & .block--one {
+
+      & h1 {
+        text-align: center;
+      }
+    }
+  }
+
+  .section--two {
+    justify-content: flex-start;
+    padding: 0 0.5em;
+    
+    & .block--two {
+      margin-top: 1em;
+      flex-direction: column;
+      
+      & img {
+        height:40vh;
+      }
+
+      & .block-text {
+        margin: 1em 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      & p:last-of-type {
+        display: none;
+      }
+    }
+    
+    & footer {
+      width: 50%;
+      height: 100%;
+      margin-bottom: 2em;
+      text-align: center;
+      font-size: 0.9rem;
+      align-self: flex-end;
+      
+      & p {
+        margin-top: auto;
+      }
+  
+      & img {
+        display: none;
+      }
+    }
+  }
+
+ .float-image {
+   margin: 0 0 1em 1em;
+   & img {
+     width: 5.5em;
+   }
+ }
+}
