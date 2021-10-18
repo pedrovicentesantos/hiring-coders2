@@ -1,0 +1,53 @@
+:root {
+  --primary-color: hsl(243, 100%, 69%);
+  --primary-color-light: hsl(243, 100%, 80%);
+  --primary-color-dark: hsl(243, 75%, 60%);
+  --secondary-color: hsl(236, 22%, 44%);
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+
+  background: linear-gradient(167.89deg, rgba(108, 99, 255, 0) 0.51%, rgba(108, 99, 255, 0.25) 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  text-align: center;
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
