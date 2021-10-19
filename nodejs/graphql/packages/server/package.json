@@ -1,0 +1,30 @@
+{
+  "name": "@dev/server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm src/index.js",
+    "dev": "nodemon -r esm src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "uuid": "^8.3.2"
+  },
+  "nodemonConfig": {
+    "ignore:": [
+      "src/data/*"
+    ]
+  }
+}

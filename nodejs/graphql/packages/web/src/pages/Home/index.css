@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: hsl(0, 0%, 80%);
+  padding: 1em;
+}
+
+.user-form {
+  margin-top: 2em;
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+li {
+  cursor: pointer;
+  color: hsl(0, 0%, 90%);
+  display: flex;
+  gap: 0 1em;
+  padding: 0.5em 1em;
+  background: hsl(0, 0%, 0%);
+}
+
+li:nth-child(even) {
+  color: #333;
+  background: hsl(0, 0%, 100%);
+}
+
+
+.user-fieldset {
+  padding: 0;
+}
+
+.user-fieldset input {
+  width: 100%;
+  padding: 1em 2em;
+}
