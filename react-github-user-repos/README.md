@@ -6,7 +6,7 @@ Faz uso de `Styled Components` e hooks como `useState`, `useEffect` e `useHistor
 
 O projeto foi feito durante o programa Hiring Coders #2 e pode ser acessado em:
 
-[https://react-github-user-repos.vercel.app](https://react-github-user-repos.vercel.app)
+[https://hiring-coders2-react-github-user-repos.vercel.app](https://hiring-coders2-react-github-user-repos.vercel.app)
 
 ## Rodando a aplicação
 
