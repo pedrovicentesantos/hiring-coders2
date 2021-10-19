@@ -6,4 +6,4 @@ O design foi pensado de forma a ser responsivo e os dados do usuário ficam salv
 
 O projeto foi feito como um desafio proposto pelo programa Hiring Coders #2 e pode ser acessado em:
 
-[https://pedrovicentesantos.github.io/landing-page-sale/](https://pedrovicentesantos.github.io/landing-page-sale/)
+[https://hiring-coders2-landing-page-sale.vercel.app](https://hiring-coders2-landing-page-sale.vercel.app)
