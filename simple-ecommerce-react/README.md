@@ -8,7 +8,7 @@ O design foi pensado de forma a ser responsivo e os dados como carrinho e dados 
 
 O projeto foi feito como um desafio proposto pelo programa Hiring Coders #2 e pode ser acessado em:
 
-[https://simple-ecommerce-react.vercel.app](https://simple-ecommerce-react.vercel.app)
+[https://hiring-coders2-simple-ecommerce-react.netlify.app](https://hiring-coders2-simple-ecommerce-react.netlify.app)
 
 ## Utilização
 
